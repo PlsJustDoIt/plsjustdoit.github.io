@@ -47,6 +47,51 @@ body {
   ul li:hover {
     background: #ddd;
   }
+
+   /* Style du bouton */
+        #open-pdf-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 40px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 20px;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s;
+        }
+
+        /* Effet au survol du bouton */
+        #open-pdf-button:hover {
+            background-color: #45a049;
+            transform: translateY(-5px); /* effet de déplacement */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* ombre portée */
+        }
+
+        /* Animation "rebond" au clic */
+        #open-pdf-button:active {
+            transform: translateY(2px);
+        }
+
+        /* Animation de zoom-in au chargement */
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Appliquer l'animation */
+        #open-pdf-button {
+            animation: zoomIn 0.5s ease-out;
+        }
   
   form {
     display: flex;

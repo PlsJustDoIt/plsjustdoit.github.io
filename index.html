@@ -13,7 +13,15 @@
     <p>Je suis Léo Maugeri, développeur web.</p>
   </header>
   <main>
-    <section id="about">
+
+    <script>
+        function openPdf() {
+            // Lien du PDF via Google Docs Viewer
+            var pdfUrl = "http://86.219.194.18/cv.pdf";
+            window.open(pdfUrl, "_blank"); // Ouvre le PDF dans un nouvel onglet
+        }
+    </script>
+	  <section id="about">
       <h2>À propos de moi</h2>
       <p>Développeur web passionné avec une licence en informatique et une expérience de stage réussie.</p>
     </section>
@@ -43,6 +51,7 @@
           <li>Application de gestion de contacts</li>
         </ul>
     </section>
+    <button id="open-pdf-button" onclick="openPdf()">Voir mon CV</button>
   </main>
   <footer>
     <p>&copy; 2024 Léo Maugeri. Tous droits réservés.</p>
